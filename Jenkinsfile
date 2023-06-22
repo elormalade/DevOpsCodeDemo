@@ -17,14 +17,14 @@ pipeline{
                   sh 'mvn compile'
 	      }
           }
-          stage('CodeReview'){
+          stage('I am Doing A CodeReview'){
               steps{
 		    
 		  echo 'codeReview'
                   sh 'mvn pmd:pmd'
               }
           }
-           stage('UnitTest'){
+           stage('i AM Doing A UnitTest'){
               steps{
 	         echo 'Testing'
                   sh 'mvn test'
