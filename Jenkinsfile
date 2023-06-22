@@ -20,13 +20,13 @@ pipeline{
           stage('CodeReview'){
               steps{
 		    
-		  echo 'I am now doing codeReview'
+		  echo 'codeReview'
                   sh 'mvn pmd:pmd'
               }
           }
            stage('UnitTest'){
               steps{
-	         echo 'Its now time for Unit Testing'
+	         echo 'Testing'
                   sh 'mvn test'
               }
                post {
